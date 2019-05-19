@@ -3,7 +3,7 @@ This packages compute the v value (i.e. systemic value) from a (sub)system in a 
 
 ## Overview
 
-gleasonCalc is a package to evaluate systemic functional valeur from a system network (see Figuredo & Figueredo, 2019). It gets agnation, delicacy and valeur magnitudes in data frames in order to visualize, correlate and sort systemic options in a gleason scale. 
+`gleasonCalc` is a package to evaluate systemic functional valeur from a system network (see Figuredo & Figueredo, 2019). It gets agnation, delicacy and valeur magnitudes in data frames in order to visualize, correlate and sort systemic options in a gleason scale. 
 
 ## Installation
 
