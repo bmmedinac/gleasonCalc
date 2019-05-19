@@ -7,7 +7,7 @@ gleasonCalc is a package to evaluate systemic functional valeur from a system ne
 
 ## Installation
 
-gleasonCalc is still under development. You can install development version of gleasonCalc from GitHub:
+`gleasonCalc` is still under development. You can install development version of `gleasonCalc` from GitHub:
 
 ```
 # Install development version from GitHub:
@@ -17,7 +17,7 @@ devtools::install_github("bmmedinac/gleasonCalc")
 
 ## Usage
 
-As a systemic-functional-linguistics-oriented package, gleasonCalc requires the transformation of a systemic network into a special format in a spreedsheet. Take for example the next English MOOD system network:
+As a systemic-functional-linguistics-oriented package, `gleasonCalc` requires the transformation of a systemic network into a special format in a spreedsheet. Take for example the next English MOOD system network:
 
 ![alt text](http://www.jwise004.grads.digitalodu.com/blog/wp-content/uploads/2015/09/Systemnetwork19.gif)
 
@@ -30,7 +30,7 @@ In a spreedsheet, in a column named 'features', each oposition and delicacy leve
 3   indicative:interrogative:yesno/indicative:interrogative:wh
 ```
 
-At the moment, gleasonCalc just can evaluate valeur from system networks without co-selections. Any try to evaluate this kind of network will return error. Meanwhile, a co-selective system network in spreedsheet would look like this with '&' marking co-selection:
+At the moment, `gleasonCalc` just can evaluate valeur from system networks without co-selections. Any try to evaluate this kind of network will return error. Meanwhile, a co-selective system network in spreedsheet would look like this with '&' marking co-selection:
 
 ```
 #   features
@@ -39,7 +39,7 @@ At the moment, gleasonCalc just can evaluate valeur from system networks without
 3   indicative:interrogative:yesno/indicative:interrogative:wh & positive/negative
 ```
 
-gleasonCalc have two built-in systems: `mood_spanish` (see Quiroz, 2013) and `mental_german` (see Figueredo & Figueredo, 2019). First one is a system **without** co-selection. Second one is a system **with** co-selection.
+`gleasonCalc` have two built-in systems: `mood_spanish` (see Quiroz, 2013) and `mental_german` (see Figueredo & Figueredo, 2019). First one is a system **without** co-selection. Second one is a system **with** co-selection.
 
 Actually, `gleasonCalc` has three main functions: `getFeatures`, `agnation` and `valeurCalc2`. It's necessary to export it from `library(gleasonCalc)` previously to use it:
 1. `getFeatures` returns all the features from the input system network. At the moment, can't return co-selective features. Example of `getFeatures` is below:
