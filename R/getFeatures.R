@@ -13,7 +13,7 @@
 #' @import stringr
 #'
 
-getFeatures <- function(df, coselection = TRUE){
+getFeatures <- function(df, coselection = FALSE){
 
   if (str_count (df$features, "&") == 0){
     truth <- sapply(df,is.character)
@@ -24,14 +24,31 @@ getFeatures <- function(df, coselection = TRUE){
       unique()
   }
 
-  else
-    truth <- sapply(df,is.character)
-  options <- df %>%
-    separate_rows (features, sep = ":") %>%
-    separate_rows (features, sep = "/") %>%
-    separate_rows (features, sep = "&")
-  options <- data.frame(cbind(sapply(options[,truth],trimws,which="both"),options[,!truth])) %>%
-    unique()
+  else {
+    if (coselection == FALSE){
+      truth <- sapply(df,is.character)
+      options <- df %>%
+        separate_rows (features, sep = ":") %>%
+        separate_rows (features, sep = "/") %>%
+        separate_rows (features, sep = "&")
+      options <- data.frame(cbind(sapply(options[,truth],
+                                         trimws,which="both"),
+                                  options[,!truth])) %>%
+        unique()
+    }
 
-  ifelse(!single, return(options), return(options))
+    else {
+      truth <- sapply(df,is.character)
+      options <- df %>%
+        separate_rows (features, sep = ":") %>%
+        separate_rows (features, sep = "/")
+      options <- data.frame(cbind(sapply(options[,truth],
+                                         trimws,which="both"),
+                                  options[,!truth])) %>%
+        unique()
+    }
+
+  }
+
+  ifelse(!coselection, return(options), return(options))
 }
