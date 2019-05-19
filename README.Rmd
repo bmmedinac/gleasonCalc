@@ -1,0 +1,38 @@
+---
+title: "gleasonCalc"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+gleasonCalc is a package to evaluate systemic functional valeur from a system network (see Figuredo & Figueredo, 2019). It gets agnation, delicacy and valeur magnitudes in data frames in order to visualize, correlate and sort systemic options. 
+
+## Installation
+
+gleasonCalc is still under development. You can install development version of gleasonCalc from GitHub:
+
+```{r}
+# Install development version from GitHub:
+install.packages("devtools")
+devtools::install_github("bmmedinac/gleasonCalc")
+
+```
+
+## Usage
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Contributing
+
+## Further readings
+
