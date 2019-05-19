@@ -105,6 +105,27 @@ valeurCalc2(mood_spanish)
 13 exclamative          2       16     32
 ```
 
+`valeurCalc2` can also sort valeur with `sorted = TRUE` argument:
+
+```
+valeurCalc2(mood_spanish, sorted = TRUE)
+# A tibble: 13 x 4
+   features      agnation delicacy valeur
+   <fct>            <dbl>    <dbl>  <dbl>
+ 1 menor                2        1      2
+ 2 major                2        1      2
+ 3 indicative           2        4      8
+ 4 imperative           2        4      8
+ 5 informative          2        9     18
+ 6 interrogative        2        9     18
+ 7 polar                2       16     32
+ 8 elemental            2       16     32
+ 9 declarative          2       16     32
+10 exclamative          2       16     32
+11 jusive               9        9     81
+12 hortative            9        9     81
+13 optative             9        9     81
+```
 ## Contributing
 
 
