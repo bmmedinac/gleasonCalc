@@ -11,7 +11,7 @@
 #' @export getFeatures
 #'
 #' @import stringr
-#'
+#'@import tidyr
 
 getFeatures <- function(df, coselection = FALSE){
 

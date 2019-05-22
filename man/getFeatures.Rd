@@ -4,7 +4,7 @@
 \alias{getFeatures}
 \title{Gets all singular features from a systemic functional network input}
 \usage{
-getFeatures(df, single = TRUE)
+getFeatures(df, coselection = FALSE)
 }
 \arguments{
 \item{df}{The dataframe with a initial column named 'features'.}
