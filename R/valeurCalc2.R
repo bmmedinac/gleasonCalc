@@ -11,6 +11,8 @@
 #' @export valeurCalc2
 #'
 #' @import stringr
+#' @import tidyr
+#' @import dplyr
 
 
 valeurCalc2 <- function(df, sorted = FALSE){
