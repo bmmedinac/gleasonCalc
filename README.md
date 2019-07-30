@@ -166,9 +166,11 @@ langspace(language_space,                               #example dataframe
           instance = language_space$clause,             #show instance saved in clause column
           framing = language_space$clause_ID)           #unfolding of text saved in clause_ID colum
 ````
+From the example above, `langspace` plots the next interactive 3D graph:
 
 ![alt text](https://github.com/bmmedinac/gleasonCalc/blob/master/Captura%20de%20Pantalla%202019-07-30%20a%20la(s)%2016.27.49.png)
 
+Actually, x-, y- and z-axis are statically defined as TYPE OF PROCESS, MOOD and THEME. Dinamyc name axis are under develope.
 
 ## Contributing
 
