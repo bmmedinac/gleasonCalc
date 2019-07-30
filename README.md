@@ -39,6 +39,7 @@ At the moment, `gleasonCalc` just can evaluate valeur from system networks witho
 3   indicative:interrogative:yesno/indicative:interrogative:wh & positive/negative
 ```
 
+### getFeatures,agnation and valeurCalc2
 `gleasonCalc` have two built-in systems: `mood_spanish` (see Quiroz, 2013) and `mental_german` (see Figueredo & Figueredo, 2019). First one is a system **without** co-selection. Second one is a system **with** co-selection.
 
 Actually, `gleasonCalc` has three main functions: `getFeatures`, `agnation` and `valeurCalc2`. It's necessary to export it from `library(gleasonCalc)` previously to use it:
@@ -127,6 +128,7 @@ valeurCalc2(mood_spanish, sorted = TRUE)
 13 optative             9        9     81
 ```
 
+### langspace
 `GleasonCalc2`package also include functions to plot interactive 3D graph. One of this functions is `langspace`. This function plots a language space (see Figueredo & Figuredo, 2019) from three systems. As example, `GleasonCalc2` have a built-in data frame called `language_space`. In order to plot a language space, dataframe must have at least three systems (in this case, TRANSITIVITY `trans`, MOOD `mood`, THEME `theme`. 
 ```
 head(language_space)
