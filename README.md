@@ -126,6 +126,50 @@ valeurCalc2(mood_spanish, sorted = TRUE)
 12 hortative            9        9     81
 13 optative             9        9     81
 ```
+
+`GleasonCalc2`package also include functions to plot interactive 3D graph. One of this functions is `langspace`. This function plots a language space (see Figueredo & Figuredo, 2019) from three systems. As example, `GleasonCalc2` have a built-in data frame called `language_space`. In order to plot a language space, dataframe must have at least three systems (in this case, TRANSITIVITY `trans`, MOOD `mood`, THEME `theme`. 
+```
+head(language_space)
+# A tibble: 6 x 7
+  ID    genre        clause_ID clause                                          trans  mood theme
+  <chr> <chr>            <dbl> <chr>                                           <dbl> <dbl> <dbl>
+1 DVM 1 Procedimien…         1 Use a Balloon                                     232    25     9
+2 DVM 1 Procedimien…         2 to Amplify Sound                                  232     9     0
+3 DVM 1 Procedimien…         3 Small sounds can still make a big noise           232   297    65
+4 DVM 1 Procedimien…         4 when you use a good sound conductor.              232    17    67
+5 DVM 1 Procedimien…         5 Experiment with a balloon, compressed air and …   232    25     9
+6 DVM 1 Procedimien…         6 to find out                                       232     9     0
+```
+
+From this dataframe, we can plot with `langspace()`function. `langspace()` can take seven arguments, but just four are mandatory:
+
+```
+langspace(df, x, y, z, grouping, instance = FALSE)
+
+Arguments
+df	        The dataframe with a data.
+x	        First variable of the plot (e.g. TYPE OF PROCESS)
+y	        Second variable of the plot (e.g. MOOD)
+z	        Third variable of the plot (e.g. THEME)
+grouping	Empty by default. Create color groups from levels of a factor (e.g. genres, fields, tenors, etc)
+instance	FALSE by default. If provided, hover shows the textual instances of x, y and z	
+```
+
+See the next use of `langspace`:
+
+````
+langspace(language_space,                               #example dataframe
+          x = language_space$trans,                     #first mandatory system
+          y = language_space$mood,                      #second mandatory system
+          z = language_space$theme,                     #third mandatory system
+          grouping = language_space$genre,              #grouping by genre
+          instance = language_space$clause,             #show instance saved in clause column
+          framing = language_space$clause_ID)           #unfolding of text saved in clause_ID colum
+````
+
+![alt text](http://www.jwise004.grads.digitalodu.com/blog/wp-content/uploads/2015/09/Systemnetwork19.gif)
+
+
 ## Contributing
 
 
