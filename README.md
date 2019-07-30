@@ -167,7 +167,7 @@ langspace(language_space,                               #example dataframe
           framing = language_space$clause_ID)           #unfolding of text saved in clause_ID colum
 ````
 
-![alt text](http://www.jwise004.grads.digitalodu.com/blog/wp-content/uploads/2015/09/Systemnetwork19.gif)
+![alt text](https://github.com/bmmedinac/gleasonCalc/blob/master/Captura%20de%20Pantalla%202019-07-30%20a%20la(s)%2016.27.49.png)
 
 
 ## Contributing
