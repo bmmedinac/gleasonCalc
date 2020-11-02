@@ -178,3 +178,5 @@ Actually, x-, y- and z-axis are statically defined as TYPE OF PROCESS, MOOD and 
 
 
 ## Further readings
+- Figueredo, G., & Figueredo, G. P. (2019). A systemic dynamics model of text production. Journal of Quantitative Linguistics. https://doi.org/10.1080/09296174.2019.1567301
+- Quiroz, B. (2013). The interpersonal and experiential grammar of chilean spanish: Towards a principled systemic-functional description based on axial argumentation [PhD Thesis]. University of Sydney.
